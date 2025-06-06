@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/javascripts/orders.js" defer></script>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+    <div class="mt-5 pt-5 container-fluid">
+        <h3>Order Management</h3>
+        <div class="container-fluid p-5">
+            <table id="ordersTable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Order Number</th>
+                        <th>Created</th>
+                        <th>Updated</th>
+                        <th>User Id</th>
+                        <th>Order Status</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody id="ordersTableBody"></tbody>
+            </table>
+        </div>
+        <!-- Edit Order modal -->
+    <div class="modal fade" id="editOrderModal" tabindex="-1" aria-labelledby="editOrderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <form id="editOrderForm">
+            <div class="modal-header">
+            <h5 class="modal-title" id="editBrandModalLabel">Edit Order Status</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <!-- Form fields -->
+            <div class="mb-3">
+                <div class="mb-3">
+                    <label for="edit-id" class="form-label">Order ID</label>
+                    <input type="text" class="form-control" id="edit-id" readonly>
+                </div>
+                <label for="edit-status" class="form-label">Status</label>
+                <select class="form-select" id="edit-status">
+                    <option value="In Progress">In Progress</option>
+                    <option value="Ordered">Ordered</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

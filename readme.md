@@ -1,29 +1,28 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/uojpyE5I)
-
-![Noroff](http://images.restapi.co.za/pvt/Noroff-64.png)
-# Noroff
-## Back-end Development Year 1
-### EP - Course Assignment Back-end
-
-
-Startup code for Noroff back-end development 1 - EP course (e-commerce). Ensure that your back-end and front-end code are in the respective folders
-
-- [back-end folder for back-end code (back-end)](./back-end)
-- [front-end folder for front-end code (front-end)](./front-end)
-
-Instruction for the course assignment is in the LMS (Moodle) system of Noroff.
-[https://lms.noroff.no](https://lms.noroff.no)
-
-![IMPORTANT](http://images.restapi.co.za/pvt/important_icon.png)
-
-You will not be able to make any submission after the deadline of the course assignment. Make sure to make all your commit **BEFORE** the deadline
-
-Only your main branch will be graded.
-
-![HELP](http://images.restapi.co.za/pvt/help_small.png)
-
-If you are unsure of any instructions for the course assignment, contact out to your teacher on **Microsoft Teams**.
-
-**REMEMBER** Your Moodle LMS submission must have your repository link **AND** your Github username in the text file.
-
+## EP - Course Assignment Back-end
+.env file example:
+- HOST=localhost
+- ADMIN_USERNAME=root
+- ADMIN_PASSWORD=password
+- DATABASE_NAME=ecommercedb
+- DIALECT=mysql
+- PORT=3000
+- ACCESS_TOKEN_SECRET=qwepoimnbzxc
 ---
+Run application:
+- Back-end:
+    - cd back-end
+    - npm install
+    - npm start
+- Front-end (new terminal): 
+    - cd front-end
+    - npm install
+    - npm start
+---
+NodeJS v20.17.0
+
+REFERENCES
+- The function generateCode in orderService.js file is created by AI.
+- The bootstrap modal form used in various ejs files are based on a design given to me by AI.
+- The search function in productService. The idea of adding strings to a base query based on parameters, was given by AI.
+- I used ChatGPT to help me with the main structure of the swagger documentation.
+- The middlware functions isAuth and errorHandler, and passwordHelper are based on code given by Nick for previous assignments.
