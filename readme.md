@@ -19,10 +19,3 @@ Run application:
     - npm start
 ---
 NodeJS v20.17.0
-
-REFERENCES
-- The function generateCode in orderService.js file is created by AI.
-- The bootstrap modal form used in various ejs files are based on a design given to me by AI.
-- The search function in productService. The idea of adding strings to a base query based on parameters, was given by AI.
-- I used ChatGPT to help me with the main structure of the swagger documentation.
-- The middlware functions isAuth and errorHandler, and passwordHelper are based on code given by Nick for previous assignments.
