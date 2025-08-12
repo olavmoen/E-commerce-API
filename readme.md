@@ -31,6 +31,8 @@ A full-stack e-commerce solution featuring a Node.js backend with a REST API and
     - Admin login: 
         - email: 'admin@noroff.no'
         - password: 'P@ssword2023'
+- Run tests:
+    - npm test
 ---
 
 NodeJS v20.17.0
